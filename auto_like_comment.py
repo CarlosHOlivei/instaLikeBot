@@ -5,7 +5,7 @@ from time import sleep
 
 
 login_instagram = pyautogui.prompt(text='Digite seu login', title='informações obrigatórias')
-senha_instagram = pyautogui.prompt(text='Digite seu senha', title='informações obrigatórias')
+senha_instagram = pyautogui.password(text='Digite seu senha', title='informações obrigatórias', mask='*')
 
 def logout():
     pyautogui.click(1057,114, duration=1.2)
@@ -75,7 +75,6 @@ while True:
         comentario=pyautogui.locateCenterOnScreen('comentario.png')
         pyautogui.click(curtir[0],curtir[1],duration=1)
         sleep(3)
-        #comentario=pyautogui.locateCenterOnScreen('comentario.png')
         pyautogui.click(comentario[0],comentario[1], duration=2)
         sleep(1.2)
         pyautogui.typewrite('Muito Legal! Gostei demais')
