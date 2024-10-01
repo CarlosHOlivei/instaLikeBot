@@ -68,7 +68,7 @@ while True:
         if coracao is not None:
     #se sim, pausar bot por 24h
             logout()
-            sleep(5)
+            sleep(43000)
     except:
         #se não, clicar em curtir
         curtir=pyautogui.locateCenterOnScreen('coracaovazio.png')
